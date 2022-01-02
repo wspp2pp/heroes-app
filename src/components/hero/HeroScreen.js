@@ -1,5 +1,7 @@
 import { useMemo } from "react";
 import { useParams, Navigate, useNavigate } from "react-router-dom"
+import { heroImages } from "../../helpers/heroImages";
+
 import { getHeroById } from "../../selectors/getHeroById";
 
 
@@ -32,14 +34,12 @@ export const HeroScreen = () => {
     if ( !hero ) {
         return <Navigate to='/' />
     }
-    // El public esta implicito
-    const imagePath = `/assets/${id}.jpg`;
 
     return (
         <div className="row mt-5">
             <div className="col-4 animate__animated animate__fadeInLeft">
                 <img 
-                    src={imagePath} 
+                    src={ heroImages(`./${ id }.jpg`) } 
                     alt={superhero}
                     // Agrega borde redondeado
                     className="img-thumbnail"

@@ -1,3 +1,4 @@
+import { useMemo } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 
 import { useForm } from "../../hooks/useForm";
@@ -25,7 +26,9 @@ export const SearchScreen = () => {
 
     const { searchText } = formValues;
 
-    const heroesFiltered = getHeroesByName( q );
+    // Solo llama a getHeroesByName( q ) solo cuando q cambia
+
+    const heroesFiltered = useMemo(() => getHeroesByName( q ), [q] );
     
     // Gestiona la busqueda
 
@@ -76,7 +79,7 @@ export const SearchScreen = () => {
 
                     {
 
-                        ( q==='' )
+                        ( q === '' )
                             ? <div className="alert alert-info animate__animated animate__fadeIn"> Type your search </div>
                             : ( heroesFiltered.length === 0 )
                                 && <div className="alert alert-danger animate__animated animate__fadeIn"> No results for: { q } </div>

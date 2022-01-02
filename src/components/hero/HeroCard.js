@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { heroImages } from "../../helpers/heroImages";
 export const HeroCard = ({
     id,
     superhero,
@@ -14,7 +15,7 @@ export const HeroCard = ({
             <div className="card">
                 <div className="row no-gutters">
                     <div className="col-4">
-                        <img src={ imagePath } className="card-img" alt={superhero}/>
+                        <img src={ heroImages(`./${ id }.jpg`) } className="card-img" alt={superhero}/>
                     </div>
                     <div className="col-8">
                         <div className="card-body">
@@ -23,7 +24,7 @@ export const HeroCard = ({
 
                             {
                                 // Si el titulo es diferente que las participaciones, entonces se muestra
-                                (alter_ego != characters) &&
+                                (alter_ego !== characters) &&
                                 <p className="text-muted">{characters}</p>
                             }   
                             {
