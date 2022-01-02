@@ -16,7 +16,7 @@
     "static/media/marvel-thor.jpg": "./static/media/marvel-thor.c63e651c5f54edf6fc00.jpg",
     "static/media/marvel-captain.jpg": "./static/media/marvel-captain.d2c7774de10a0339515c.jpg",
     "static/media/dc-batman.jpg": "./static/media/dc-batman.ab9eadc3f28199d6be0b.jpg",
-    "static/media/dc-arrow.jpg": "https://github.com/wspp2pp/heroes-app/blob/master/docs/static/media/dc-arrow.15b27bc268297c6ee1c5.jpg",
+    "static/media/dc-arrow.jpg": "/static/media/dc-arrow.15b27bc268297c6ee1c5.jpg",
     "static/media/marvel-wolverine.jpg": "./static/media/marvel-wolverine.ee676488b2f3cb91cb12.jpg",
     "static/media/marvel-cyclops.jpg": "./static/media/marvel-cyclops.f144240854b9dec1b9af.jpg",
     "static/media/marvel-hawkeye.jpg": "./static/media/marvel-hawkeye.1f78e874c315b926c463.jpg",
