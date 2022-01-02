@@ -39,7 +39,7 @@ export const HeroScreen = () => {
         <div className="row mt-5">
             <div className="col-4 animate__animated animate__fadeInLeft">
                 <img 
-                    src={ heroImages(`./${ id }.jpg`) } 
+                    src={ heroImages(`./${ heroId }.jpg`) } 
                     alt={superhero}
                     // Agrega borde redondeado
                     className="img-thumbnail"
