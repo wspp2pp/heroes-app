@@ -25,6 +25,6 @@
     "main.5dbf6a7f.js.map": "./static/js/main.5dbf6a7f.js.map"
   },
   "entrypoints": [
-    "static/js/main.5dbf6a7f.js"
+    "./static/js/main.5dbf6a7f.js"
   ]
 }
