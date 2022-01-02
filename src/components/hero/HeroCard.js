@@ -8,7 +8,6 @@ export const HeroCard = ({
     first_appearance,
     characters,
 }) => {
-    const imagePath = `./Assets/${id}.jpg`;
     return (
         // Coloco las tarjetas dentro de columnas
         <div className="col"> 
